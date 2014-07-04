@@ -3,9 +3,9 @@
 # ----------------------- #
 
 url: http://Iamyuan.github.io
-title: My Octopress Blog
-subtitle: A blogging framework for hackers.
-author: Your Name
+title: My Summer_intern Note
+subtitle: Summer_intern Note. 
+author: Sue-Yuan Hsu
 simple_search: https://www.google.com/search
 description:
 
@@ -41,11 +41,11 @@ rdiscount:
     - smart
 highlighter: pygments # default python pygments have been replaced by pygments.rb
 
-paginate: 10          # Posts per page on the blog index
+paginate: 3          # Posts per page on the blog index
 paginate_path: "posts/:num"  # Directory base for pagination URLs eg. /posts/2/
 recent_posts: 5       # Posts in the sidebar Recent Posts section
 excerpt_link: "Read on &rarr;"  # "Continue reading" link text at the bottom of excerpted articles
-excerpt_separator: "<!--more-->"
+excerpt_separator: "<!--Readme-->"
 
 titlecase: true       # Converts page and post titles to titlecase
 
@@ -98,4 +98,4 @@ disqus_show_comment_count: false
 google_analytics_tracking_id:
 
 # Facebook Like
-facebook_like: false
+facebook_like: true
