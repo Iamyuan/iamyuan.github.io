@@ -4,7 +4,7 @@
   <title><![CDATA[My Octopress Blog]]></title>
   <link href="http://Iamyuan.github.io/atom.xml" rel="self"/>
   <link href="http://Iamyuan.github.io/"/>
-  <updated>2014-07-04T14:00:55+08:00</updated>
+  <updated>2014-07-04T15:46:21+08:00</updated>
   <id>http://Iamyuan.github.io/</id>
   <author>
     <name><![CDATA[Your Name]]></name>
@@ -12,5 +12,282 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Note 0702 Markdown Ssh Setup Instal Ruby]]></title>
+    <link href="http://Iamyuan.github.io/blog/2014/07/04/note-0702-markdown-ssh-setup-instal-ruby/"/>
+    <updated>2014-07-04T00:00:00+08:00</updated>
+    <id>http://Iamyuan.github.io/blog/2014/07/04/note-0702-markdown-ssh-setup-instal-ruby</id>
+    <content type="html"><![CDATA[<h1><a href="http://daringfireball.net/projects/markdown/">Markdown</a></h1>
+
+<blockquote><p>Markdown的目標是實現「易讀易寫」, 語法全由標點符號所組成，並經過嚴謹慎選，是為了讓它們看起來就像所要表達的意思, 相較於HTML, 其更容易書寫、閱讀和修改，省去許多非必要的符號，更能專注在內容的編譯。</p></blockquote>
+
+<h2>1. Words size</h2>
+
+<h3>※When you write down&hellip;</h3>
+
+<p><code>###### H6最小</code></p>
+
+<p><code># H1最大</code></p>
+
+<p><code>標題</code></p>
+
+<p><code>======</code></p>
+
+<p><code>分隔線</code></p>
+
+<p><code>-------</code></p>
+
+<h3>※What you see&hellip;</h3>
+
+<h6>H6最小</h6>
+
+<h1>H1最大</h1>
+
+<h1>標題</h1>
+
+<h2>分隔線</h2>
+
+<h2>2. Lists</h2>
+
+<p>清單項目標記通常是放在最左邊，但是其實也可以縮排，最多三個空白，項目標記後面則一定要接著至少一個空白或tab</p>
+
+<p>換行時需要多空一行，在內容中才會顯示換行，如果中間無多空一行則會皆在上一行後面，但如果是list則不用刻意多空一行。</p>
+
+<h3>※When you write down&hellip;</h3>
+
+<p><code>1. 空一格再開始打字</code></p>
+
+<p><code>1. 第二行即使不是2.也會按順序顯示</code></p>
+
+<p><code>* 甚至是星號也可以</code></p>
+
+<p><code>+ +也可以</code></p>
+
+<p> <code>- -也行</code></p>
+
+<p> <code>* 如果星號前多一個空格就是圓圈</code></p>
+
+<p> <code>* 並且會接往後對齊</code></p>
+
+<p> <code>+ +也可以是圓圈</code></p>
+
+<p> <code>- -也行</code></p>
+
+<h3>※What you see&hellip;</h3>
+
+<ol>
+<li>空一格再開始打字</li>
+<li>第二行即使不是2.也會按順序顯示</li>
+<li>甚至是星號也可以</li>
+<li>+也可以</li>
+<li><p>-也行</p>
+
+<ul>
+<li>如果星號前多一個空格就是圓圈</li>
+<li>並且會接往後對齊</li>
+<li>+也可以是圓圈</li>
+<li>-也行</li>
+</ul>
+</li>
+</ol>
+
+
+<h2>3. Links</h2>
+
+<h3>※When you write down&hellip;</h3>
+
+<p>[輸入欲顯示的內容1]：(網址1)</p>
+
+<p>[輸入欲顯示的內容2]</p>
+
+<p><code>[foo]</code></p>
+
+<p><code>[foo]: 網址foo  "Optional Title Here"</code></p>
+
+<p><code>[foo]: 網址foo  'Optional Title Here'</code></p>
+
+<p><code>[foo]: 網址foo  (Optional Title Here)</code></p>
+
+<p>[輸入欲顯示的內容2]：網址2</p>
+
+<p><code>&lt;http://www.youtube.com/watch?v=6A5EpqqDOdk&gt;</code></p>
+
+<h3>※What you see&hellip;</h3>
+
+<p>[輸入欲顯示的內容1]</p>
+
+<p>[輸入欲顯示的內容2]</p>
+
+<p><a href="http://example.com/" title="Optional Title Here">foo</a></p>
+
+<p><a href="http://www.youtube.com/watch?v=6A5EpqqDOdk">http://www.youtube.com/watch?v=6A5EpqqDOdk</a></p>
+
+<h2>4. Emphasis</h2>
+
+<p>星號數量會改變字體型式，內容前後加兩個星號為粗體字, 加一個星號或者底線則為斜體字。</p>
+
+<h3>※When you write down&hellip;</h3>
+
+<p> <code>*斜體字*</code></p>
+
+<p> <code>_斜體字_</code></p>
+
+<p><code>**粗體字**</code></p>
+
+<p><code>***粗體字且粗體字***</code></p>
+
+<p><code>*沒有任何改變</code></p>
+
+<p><code>**斜體字*</code></p>
+
+<p><code>*斜體字**</code></p>
+
+<h3>※What you see&hellip;</h3>
+
+<p><em>斜體字</em></p>
+
+<p><em>斜體字</em></p>
+
+<p><strong>粗體字</strong></p>
+
+<p><strong><em>粗體字且粗體字</em></strong></p>
+
+<p>沒有任何改變*</p>
+
+<p><em>*斜體字</em></p>
+
+<p><strong>*斜體字</strong></p>
+
+<h2>5. Image</h2>
+
+<h3>※When you write down&hellip;</h3>
+
+<p><code>![任意名稱](http://lh6.ggpht.com/-3EHhpkjOs6w/T6oovnaxF5I/AAAAAAAACY0/5rVys-SX_qU/logo-iShow-2_thumb.jpg?imgmax=800)</code></p>
+
+<p><code>![picture][任意名稱2]</code></p>
+
+<p><code>[任意名稱2]:http://lh6.ggpht.com/-3EHhpkjOs6w/T6oovnaxF5I/AAAAAAAACY0/5rVys-SX_qU/logo-iShow-2_thumb.jpg?imgmax=800</code></p>
+
+<p><code>![picture](http://lh6.ggpht.com/-3EHhpkjOs6w/T6oovnaxF5I/AAAAAAAACY0/5rVys-SX_qU/logo-iShow-2_thumb.jpg?imgmax=800 "任意名稱3")</code></p>
+
+<h3>※What you see&hellip;</h3>
+
+<p><img src="http://lh6.ggpht.com/-3EHhpkjOs6w/T6oovnaxF5I/AAAAAAAACY0/5rVys-SX_qU/logo-iShow-2_thumb.jpg?imgmax=800" alt="任意名稱" /></p>
+
+<p><img src="http://lh6.ggpht.com/-3EHhpkjOs6w/T6oovnaxF5I/AAAAAAAACY0/5rVys-SX_qU/logo-iShow-2_thumb.jpg?imgmax=800" alt="picture" />
+<img src="http://lh6.ggpht.com/-3EHhpkjOs6w/T6oovnaxF5I/AAAAAAAACY0/5rVys-SX_qU/logo-iShow-2_thumb.jpg?imgmax=800" title="任意名稱3" alt="picture" /></p>
+
+<h2>6. Blockquotes</h2>
+
+<p>大於符號（>）用來標記引言區塊，這和 Email 裡的使用方式很像，所以你要引用一段文字，讓他看起來有縮排的效果，只要在這段文字的開頭處加上 > 就可以了，像是</p>
+
+<blockquote><h4>This is a very long line that will still be quoted properly when it wraps. Oh boy let&rsquo;s keep writing to make sure this is long enough to actually wrap for everyone. Oh, you can put Markdown into a blockquote.</h4></blockquote>
+
+<h2>Further Explanation</h2>
+
+<p>大部分的語法都在<a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet">Markdown-Cheatsheet</a>中說明，若是Windows系統可以下載<a href="http://markdownpad.com/download.html">markdownpad</a>來編輯Markdown, 而Mac則是下載<a href="http://mouapp.com/">Mou</a>，其中有些差別，<a href="http://markdownpad.com/download.html">markdownpad</a>無法編輯table，而且也無法在文章前後分別用三個 ` 來囊括一段文字(可以選擇不同的程式語言),除此之外大致相同。</p>
+
+<h1>SSH setup</h1>
+
+<h2>[MAC]</h2>
+
+<blockquote><p>Github可以利用Html和SSH來遠端repo, 使用HTML每次都要輸入信箱和密碼,
+而SSH會產生一組非對稱金鑰, 就如同鑰匙(private key)和鎖頭(public key), 因此只要在電腦上設定好private key, 就可以免密碼取得repo的內容。</p></blockquote>
+
+<ol>
+<li>首先，打開git bash且輸入 <code>cat ~/.ssh/id_rsa.pub</code> 確認是否已生成SSH key。</li>
+<li>若未產生SSH key, 輸入 <code>ssh-keygen -t rsa(或dsa) -C "your_email@example.com"</code> ，然後會詢問<code>存取位置</code>，
+以及是否設定private key的 passphrase (empty for no passphrase)，可依個人需求再次加密。</li>
+<li>完成後再次輸入 <code>cat ~/.ssh/id_rsa</code> 會出現 private key, 然後再輸入 <code>cat ~/.ssh/id_rsa.pub</code> 則會有public key, 例如: <code>ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAklOUpkDHrfHY17SbrmTIpNLTGK9Tjom/BWDSU
+GPl+nafzlHDTYW7hdI4yZ5ew18JH4JW9jbhUFrviQzM7xlELEVf4h9lFX5QVkbPppSwg0cda3
+Pbv7kOdJ/MTyBlWXFCR+HAo3FXRitBqxiX1nKhXpHAZsMciLq8V6RjsNAQwdsdMFvSlVK/7XA
+t3FaoJoAsncM1Q9x5+3V0Ww68/eIFmb1zuUFljQJKprrX88XypNDvjYNby6vw/Pb0rwert/En
+mZ+AW4OZPnTPI89ZPmVMLuayrD2cE86Z/il8b+gw3r3+1nKatmIkjn2so1d01QraTlMqVSsbx
+NrRFi9wrf+M7Q== schacon@agadorlaptop.local</code></li>
+<li>接著到Github上去建立一個SSH, 並且輸入名稱及public key(copy)。</li>
+<li>回到commend line輸入 <code>git remote add origin git@github.com:Iamyuan/Summer-Intern_Note.git</code> 接著輸入<code>git push -u origin master</code> 此動作為設定遠端的位置。</li>
+<li>接著在git bash 輸入<code>ssh -T git@github.com</code> 並且回答YES即可</li>
+<li>往後，如果要取得github上的內容，便輸入 <code>git clone git@github.com:Iamyuan/Summer-Intern_Note.git</code>。</li>
+<li>如果要上傳的話則是在commit之後輸入<code>git push</code>即可。</li>
+</ol>
+
+
+<p>可以參考<a href="https://help.github.com/articles/generating-ssh-keys">GitHub Help-Generating SSH Keys</a>或者有<a href="http://www.youtube.com/watch?v=bBUuHvdROKE">完整的影片</a></p>
+
+<p>也可以在<a href="http://www.gtwang.org/2014/02/linux-git-server-using-ssh.html">linux中架設GIT並使用SSH KEY</a></p>
+
+<h2>[WINDOWS]</h2>
+
+<ol>
+<li>安裝好<a href="http://code.google.com/p/msysgit/downloads/list">git</a>之後，在<a href="http://i.imgur.com/ySLJixK.png">git bash</a>,輸入<code>ssh-keygen -C “username@email.com” -t rsa</code>此時c:\Users\yuan.ssh 裡面有id_rsa 和id_rsa_pub.兩個檔案</li>
+<li>就如同上面234步驟，然後也可以繼續按照上述56執行，或者提供另一方法，複製GitHub上的url, 然後回commend line輸入<code>git clone git@github.com:Iamyuan/Summer-Intern_Note.git</code>，即表示已設定了remote origin，且同時在c:\Users\yuan.ssh 也會多一個know_hosts的檔案(裡面是public key的內容)。</li>
+<li>也可在git bash輸入<code>ssh -T git@github.com</code> 檢查是否通過驗證</li>
+<li>往後便可自由pull、push在 GitHub的檔案。</li>
+</ol>
+
+
+<p><strong>以上參考<a href="http://www.dotblogs.com.tw/kirkchen/archive/2013/04/23/use_ssh_to_interact_with_github_in_windows.aspx">windows使用ssh對GitHub進行操作</a>, 關於產生SSH KEY, 也有其他方法:</strong></p>
+
+<ul>
+<li><a href="http://www.ecora.com/ecora/support/putty/puttygen-x86.exe">PuttyGen</a>是SSH 安全遠端連線程式</li>
+<li><a href="http://www.youtube.com/watch?v=K1M-QhJAh9E" title="setup a SSH serve in Windows8.1">setup a SSH serve in Windows8.1</a></li>
+<li><a href="http://ntu.csie.org/~piaip/pietty/">PietTTY</a>是源自於PuTTY ，修正與完整支援亞洲等多國語系字元、 並在使用界面上大幅改進、易學易用的版本</li>
+</ul>
+
+
+<h1>Install-<a href="https://www.ruby-lang.org/en/installation/#homebrew">Ruby</a></h1>
+
+<p>目前最新的穩定版本是 2.1.2。</p>
+
+<p>安裝順序： XCode → HomeBrew → ROR → etc(SSH&hellip;)</p>
+
+<h2>1. XCode</h2>
+
+<p>Open the Mac App Store to buy and download apps.</p>
+
+<p><a href="https://itunes.apple.com/us/app/xcode/id497799835?mt=12">APP介紹</a></p>
+
+<h2>2. HomeBrew(套件管理工具)</h2>
+
+<p>在commend line 輸入</p>
+
+<p><code>ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go/install)</code></p>
+
+<p>安裝Git(版本管理)<code>brew install git</code></p>
+
+<p>安裝wget(抓網路檔案的工具)<code>brew install wget</code></p>
+
+<p>安裝ImageMagick(縮圖用)<code>brew install imageMagick</code></p>
+
+<p>安裝MySQL(DataBase)<code>brew install mysql</code></p>
+
+<p>設定MySQL</p>
+
+<h2>3. RVM</h2>
+
+<p>管理及切換不同版本的ruby</p>
+
+<p><code>$ curl -L https://get.rvm.io | bash -s stable</code></p>
+
+<p>接著重開命令列或者重新登入
+(<a href="https://www.ruby-lang.org/en/installation/#rbenv">rbven</a>也可以)</p>
+
+<h2>4. ROR</h2>
+
+<p>安裝ruby<code>rvm install ruby-版本</code></p>
+
+<p>安裝ruby gem<code>rvm rubygems current</code></p>
+
+<p>安裝rails<code>gem install rails</code></p>
+
+<h2>Further Explanation</h2>
+
+<ul>
+<li><a href="http://www.slideshare.net/marsz330/ruby-on-rails-for-mac">Ruby on Rails 開發環境建置 for Mac</a></li>
+</ul>
+
+]]></content>
+  </entry>
   
 </feed>
