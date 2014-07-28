@@ -11,7 +11,7 @@ Octopress
 [ Install ]
 ----
  
- * Install Git
+ * Install Git 
  * Install ruby
  * Setup Octopress
  
@@ -61,7 +61,7 @@ Octopress
      
     Edit the title.markdown
     
- *   
+
       
     
         
